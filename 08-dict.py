@@ -22,10 +22,6 @@ print(d3.get("Ankushsd", "Not found"))
 d3["John"] = 348763287234832487
 print(d3)
 
-# del
-del d3[3]
-print(d3)
-
 # update()
 oldDict = {
 "sjkdhksj": "sdmnbsm",
@@ -34,9 +30,8 @@ oldDict = {
 d3.update(oldDict)
 print(d3)
 
-d3.pop("Ankush")
-print(d3)
-print(d3)
+# pop() ( return deleted value back)
+print(d3.pop("Ankush"))
 
 # merge
 a1 = ["a", "b", "c"]
@@ -49,5 +44,11 @@ d3.clear()
 print(d3)
 
 # del function
+
+# deleting item
+del d3[3]
+print(d3)
+
+# deleting whole dictionary
 del d3
 # print(d3) ( it will through error, because we don't have d3 now )
