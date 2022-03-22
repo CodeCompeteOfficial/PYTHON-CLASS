@@ -1,4 +1,7 @@
 # create lsit using list constructor
+from ast import arguments
+
+
 lst1 = list()
 print(type(lst1))
 
@@ -32,6 +35,11 @@ print(data[2:5])
 print(data[:7])
 print(data[7:])
 
+# mutable ( we can change or replace values in list )
+print(data[0])
+data[0] = "this is 1"
+print(data[0])
+
 # list methods
 # we are creating new list to learn list methods
 
@@ -55,6 +63,7 @@ city.reverse()
 print(city)
 
 # count()
+
 print(city.count("Pune"))
 print(city)
 
